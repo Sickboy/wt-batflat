@@ -1,0 +1,9 @@
+drwxrwxr-x    2 r04118rh   r04118rh         4096 Aug 24  2018 .
+drwxr-xr-x   15 r04118rh   r04118rh         4096 Sep 14  2018 ..
+-rw-rw-r--    1 r04118rh   r04118rh         1073 Aug 24  2018 LICENSE
+-rw-rw-r--    1 r04118rh   r04118rh          186 Aug 24  2018 README.md
+-rw-rw-r--    1 r04118rh   r04118rh         1053 Aug 24  2018 bootstrap-media-lightbox.css
+-rw-rw-r--    1 r04118rh   r04118rh        11527 Aug 24  2018 bootstrap-media-lightbox.js
+-rw-rw-r--    1 r04118rh   r04118rh         1010 Aug 24  2018 bootstrap-media-lightbox.less
+-rw-rw-r--    1 r04118rh   r04118rh         6725 Aug 24  2018 bootstrap-media-lightbox.min.js
+-rw-rw-r--    1 r04118rh   r04118rh          459 Aug 24  2018 composer.json

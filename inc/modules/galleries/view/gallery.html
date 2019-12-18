@@ -1,0 +1,27 @@
+<script>
+</script>
+     <div class="content three_quarter first"> 
+	<h2>{$name.name}<br>
+	<small>{$name.desc}</small></h2>
+	{loop: $items}
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                {* image sizes: lg - oryginal size, md - 600px, sm - 300px, xs - 150px *}
+                <a href="{$value.src.lg}" rel="lytebox[gallery]" >
+                    <img src="{$value.src.sm}" class="img-responsive" \>
+                </a>
+            </div>
+        </div>
+        {/loop}
+    </div>
+    <div class="sidebar one_quarter">
+	<nav class='sdb_holder'><ul>
+	{loop: $galleryList}
+            <li><a href="/zdjecia?g={$value.slug}">{$value.name}</a></li>
+        {/loop}
+	</ul></nav>
+    </div>
+
+<script>
+</script>
+

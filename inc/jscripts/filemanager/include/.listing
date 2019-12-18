@@ -1,0 +1,11 @@
+drwxr-xr-x    2 r04118rh   r04118rh         4096 Aug 22  2018 .
+drwxr-xr-x    8 r04118rh   r04118rh         4096 Aug 22  2018 ..
+-rw-r--r--    1 r04118rh   r04118rh         6148 Aug 22  2018 .DS_Store
+-rw-r--r--    1 r04118rh   r04118rh        25237 Aug 22  2018 FtpClient.php
+-rw-r--r--    1 r04118rh   r04118rh          546 Aug 22  2018 FtpException.php
+-rw-r--r--    1 r04118rh   r04118rh         5346 Aug 22  2018 FtpWrapper.php
+-rw-r--r--    1 r04118rh   r04118rh         9995 Aug 22  2018 Response.php
+-rw-r--r--    1 r04118rh   r04118rh         2150 Aug 22  2018 ftp_class.php
+-rw-r--r--    1 r04118rh   r04118rh         9034 Aug 22  2018 mime_type_lib.php
+-rw-r--r--    1 r04118rh   r04118rh        98496 Aug 22  2018 php_image_magician.php
+-rw-r--r--    1 r04118rh   r04118rh        26389 Aug 22  2018 utils.php

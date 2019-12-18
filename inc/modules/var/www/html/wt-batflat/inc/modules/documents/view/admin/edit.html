@@ -1,0 +1,73 @@
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="panel panel-default">
+                  <div class="panel-heading">
+                        <h3 class="panel-title">Dodawanie dokumentu</h3>
+                  </div>
+                  <div class="panel-body">
+                   {loop: $rows}
+                    <form  action="{?=url([ADMIN, 'documents', 'updateDoc', {$value.id}])?}" method="POST"  ENCTYPE="multipart/form-data">
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Tytuł</label>
+                            <input type="input" class="form-control" name="title" value="{$value.title}">
+                        </div>
+                        <div class="form-group">
+                            <label >Opis</label>
+                            <textarea class="form-control" name="desc" rows="3" value="">{$value.desc}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Organ wydający</label>
+                            <select class="form-control" name="publisher">
+                                  <option {if: $value.publisher == 'Zarząd Koła'} selected {/if}>Zarząd Koła</option>
+                                  <option {if: $value.publisher == 'Walne Zgromadzenie'} selected {/if}>Walne Zgromadzenie</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label >Ogłoszony</label>
+                            <input type="date" class="form-control" name="published"  value="{$value.published}">
+                        </div>
+                        <div class="form-group">
+                            <label>Status</label>
+                            <select class="form-control" name="status">
+                                <option {if: $value.status == 'Obowiązujący'} selected {/if}>Obowiązujący</option>
+                                <option {if: $value.status == 'Wygasły'} selected {/if}>Wygasły</option>
+                            </select>
+                        </div>
+                        {? $foo = $value.did ?}
+                        {? $filen = $value.file ?}
+                        {? $uidd = $value.uid ?}
+                        <div class="form-group">
+                            <label>Zależność</label>
+                            <select class="form-control" name="did">
+                                <option value="0">Brak</option>
+                                {loop: $did}
+                                <option value="{$value.id}" {if: $foo == $value.id} selected {/if}>{$value.title}</option>
+                                {/loop}
+                            </select>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                         <div class="form-group">
+                            <label>Dokument dodał</label>
+                            <br><?php echo $this->core->getUserInfo('fullname', $uidd); ?>
+                        </div>
+                        <div class="form-group">
+                            <label>Aktualny plik</label>
+                            <br><a href="<?php echo url(['uploads', 'documents', $filen]); ?>" target="_blank">{$filen}</a>
+                         </div>
+                        <div class="form-group">
+                            <label>Nowy plik</label>
+                            <input type="file" class="form-control-file" name="file">
+                        </div>
+                        
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button> 
+                    </form>
+                    {/loop}
+                  </div>
+            </div>
+              
+        </div>
+    </div>

@@ -1,0 +1,73 @@
+  <script>
+  $( function() {
+    $( "#datepickerOd" ).datepicker({
+  dateFormat: 'yy-mm-dd'
+	});
+    $( "#datepickerDo" ).datepicker({
+  dateFormat: 'yy-mm-dd'
+        });
+
+$("#colorpicker").spectrum({
+    preferredFormat: "name",
+    showPaletteOnly: true,
+    showPalette:true,
+    hideAfterPaletteSelect:true,
+    color: 'green',
+    palette: [
+        ['lightgreen', 'black', 'white', 'red', 'yellow', 'green', 'blue', 'magenta', 'grey']
+    ]
+});
+
+//$("#colorpicker").on('change keydown paste input', function(){
+//      if (document.getElementById("colorpicker").value == 'grey'){
+//	document.getElementById("moonphaseDiv").style.display = "inline";
+//	}
+//});
+
+  } );
+
+  </script>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="panel panel-default">
+                  <div class="panel-heading">
+                        <h3 class="panel-title">Dodawanie wydarzenia</h3>
+                  </div>
+                  <div class="panel-body">
+			<form action="{?=url(ADMIN.'/calendar/safe')?}" method="POST">
+				<div class="col-xs-12 form-group">
+                        <label>Tytuł*</label>
+                        <input type="text" class="form-control" name="tytul" >
+                                </div>
+				<div class="col-xs-12 form-group">
+			<label>Treść</label>
+                        <textarea class="form-control" name="tresc" > </textarea>
+                                </div>
+                                <div class="col-xs-6 form-group">
+
+                        <label>Od kiedy*</label>
+			<input type="text" class="form-control" name="od"  id="datepickerOd">
+				</div>
+				<div class="col-xs-6 form-group">
+                        <label>Do kiedy*</label>
+                        <input type="text" class="form-control" name="do"  id="datepickerDo">
+                                </div>
+			<div class="col-xs-12"><label>Kolor: </label> 
+			<input id="colorpicker" name="kolor" class="form-control" value='green'\></div>
+			<span style="color:red"><b>uwagi, polowania</b></span>
+        		<span style="color:green"><b>przyrodnicze</b></span>
+        		<span style="color:grey"><b>fazy księżyca</b></span>
+			<br>		
+		
+<!--			<div style="display:none" name="moonphaseDiv" id="moonphaseDiv">
+				<label>Faza księżyca*</label>
+				<select name="moonphase" class="form-control" hidden><option>asdasd</option></select>
+			</div> -->
+	
+			<div class="col-xs-12"><br><input type="submit" class="btn btn-primary" value="{$lang.general.save}" /></div>
+        	        </form>
+			
+           	</div>
+	    </div>   
+        </div>
+    </div>

@@ -1,0 +1,30 @@
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="panel panel-default">
+                  <div class="panel-heading">
+                        <h3 class="panel-title">Zarządzanie</h3>
+                  </div>
+                  <div class="panel-body">
+                        <table class="table table-striped no-margin">
+                            <tr>
+                                <th>tytuł</th><th>opublikowany</th><th>przez</th><th>status</th><th>plik</th><th class="text-right">akcja</th>
+                            </tr>
+                            {loop: $rows}
+                            <tr>
+                                <td>{$value.title}</td><td>{$value.published}</td><td>{$value.publisher}</td><td>{$value.status}</td><td><a href="<?php echo url(['uploads', 'documents', $value.file]); ?>" target="_blank">{$value.file}</a></td>
+                                <td class="text-right">
+                                        <a href="{$value.editURL}" class="btn btn-xs btn-success">
+                                            <i class="fa fa-pencil"></i> <span class="hidden-xs">{$lang.general.edit}</span>
+                                        </a>
+                                        <a href="{$value.delURL}" class="btn btn-xs btn-danger" data-confirm="{$lang.galleries.delete_confirm}">
+                                            <i class="fa fa-trash-o"></i> <span class="hidden-xs">{$lang.general.delete}</span>
+                                        </a>
+                                    </td>
+                            </tr>
+                            {/loop}    
+                        </table>
+                  </div>
+            </div>
+              
+        </div>
+    </div>

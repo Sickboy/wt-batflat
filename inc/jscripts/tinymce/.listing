@@ -1,0 +1,9 @@
+drwxr-xr-x    6 r04118rh   r04118rh         4096 Aug 22  2018 .
+drwxr-xr-x   15 r04118rh   r04118rh         4096 Sep 14  2018 ..
+-rw-r--r--    1 r04118rh   r04118rh         3561 Aug 22  2018 jquery.tinymce.min.js
+drwxr-xr-x    2 r04118rh   r04118rh         4096 Aug 22  2018 langs
+-rw-r--r--    1 r04118rh   r04118rh        26441 Aug 22  2018 license.txt
+drwxr-xr-x   46 r04118rh   r04118rh         4096 Aug 22  2018 plugins
+drwxr-xr-x    3 r04118rh   r04118rh         4096 Aug 22  2018 skins
+drwxr-xr-x    5 r04118rh   r04118rh         4096 Aug 22  2018 themes
+-rw-r--r--    1 r04118rh   r04118rh       351083 Aug 22  2018 tinymce.min.js

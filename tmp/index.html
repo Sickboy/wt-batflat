@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!--
+	Główna
+-->
+<html>
+<head>
+<title>Koło Łowieckie "Wieniec" w Toruniu</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="https://13.74.156.216/inc/css/bootstrap.min.css">
+<link href="https://13.74.156.216/themes/wt/css/layout.css" rel="stylesheet" type="text/css" media="all">  
+<link href="https://13.74.156.216/themes/wt/css/timeline.css" rel="stylesheet" type="text/css" media="all"> 
+<link href="https://13.74.156.216/inc/jscripts/lytebox/lytebox.css" rel="stylesheet" type="text/css" media="all"> 
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+<!--- <link href="https://13.74.156.216/themes/wt/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://13.74.156.216/inc/jscripts/bootstrap.min.js"></script> 
+    <link href="https://13.74.156.216/inc/jscripts/calendar/fullcalendar.css" rel="stylesheet"> 
+    <script src="https://13.74.156.216/inc/jscripts/calendar/lib/moment.min.js"></script> 
+    <script src="https://13.74.156.216/inc/jscripts/calendar/fullcalendar.js"></script> 
+    <script src="https://13.74.156.216/inc/jscripts/calendar/locale/pl.js"></script> 
+    <script src="https://13.74.156.216/inc/jscripts/lytebox/lytebox.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+</head>
+<style>
+a{color:#FF8F2B;}
+a:active, a:focus{background:transparent;}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+}
+.navbar-custom {
+  background-color: #423424;
+  border-color: #423424;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+.navbar-custom .navbar-text {
+  color: #FFFFFF;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #FF8F2B;
+  background-color: #423424;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #FF8F2B;
+  background-color: #423424;
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #FF8F2B;
+  background-color: #423424;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #FF8F2B;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #FF8F2B;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #FF8F2B;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #423424;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #FF8F2B;
+  border-bottom-color: #FF8F2B;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #423424;
+  color: #FF8F2B;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret { 
+  border-top-color: #FF8F2B;
+  border-bottom-color: #FF8F2B;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
+}
+
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #FFFFFF;
+    background-color: #FF8F2B;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #FFFFFF;
+    background-color: #FF8F2B;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #FF8F2B;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #FFFFFF;
+}
+.navbar-custom .navbar-link:hover {
+  color: #FFFFFF;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color:rgba(0,0,0,.6);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #423424;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 2.2;
+    color: #ffffff;
+    white-space: nowrap;
+    border-top: 2px solid #615c5c;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #FF8F2B;
+    outline: 0;
+    line-height: 2.2;
+    border-top: 2px solid #615c5c;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #ffffff;
+    white-space: nowrap;
+    background-color: #FF8F2B;
+    line-height: 2.2;
+    border-top: 2px solid #615c5c;
+}
+</style>
+<!--- <script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideDown("900");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideUp("normal");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script> -->
+<body id="top">
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+    <div class="fl_left">
+      <ul class="nospace inline pushright">
+	                        <li><i class="fa fa-user"></i>Witaj, <a href="/admin" target="_blank"> admin </a><li><a href="https://13.74.156.216/admin/logout?t=9155a2e11b79"><i class="fas fa-sign-out-alt"></i> Wyloguj </a> </li>
+                       
+        <li><a href="https://systemkl.pzlow.pl/palio/html.run?_Instance=kl.pzlow.pl" target="_blank"><i class="fas fa-laptop"></i> System KL PZŁ </a> </li>
+   </ul>
+    </div>
+    <div class="fl_right">
+      <form class="clear" method="post" action="#">
+        <fieldset>
+          <legend>Szukaj:</legend>
+          <input type="search" value="" placeholder="Szukaj&hellip;">
+          <button class="fa fa-search" type="submit" title="Szukaj"><em>Szukaj</em></button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo" class="fl_left">
+      <h1><a href="https://13.74.156.216">WIENIEC</a></h1>
+      <p>Koło Łowieckie w Toruniu</p>
+    </div>
+
+<header class="navbar navbar-custom fl_right" >
+  
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+            <li class="dropdown ">
+        <a href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            O kole            <span class="caret"></span>
+        </a>
+	        <ul class="dropdown-menu">
+            	    	    <li ><a href="https://13.74.156.216/blog">Aktualności</a></li>
+	    	    	    	    <li ><a href="https://13.74.156.216/historia">Historia</a></li>
+	    	    	    	    <li ><a href="https://13.74.156.216/obwody">Nasze obwody</a></li>
+	    	    	    	    <li ><a href="https://13.74.156.216/mapa">Mapa obwodów</a></li>
+	    	    	    	    <li ><a href="https://13.74.156.216/czlonkowie">Członkowie</a></li>
+	    	            </ul>
+    </li>
+                        <li class="dropdown ">
+        <a href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Sprawy koła            <span class="caret"></span>
+        </a>
+	              <ul class="dropdown-menu">
+            	    	                <li ><a href="https://13.74.156.216/dokumenty">Dokumenty</a></li>
+            	    	    	    	                <li ><a href="https://13.74.156.216/plan-polowan-zbiorowych">Plan polowań zbiorowych</a></li>
+            	    	            </ul>
+    </li>
+                <li class="dropdown ">
+        <a href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Galerie            <span class="caret"></span>
+        </a>
+	        <ul class="dropdown-menu">
+            	    	    <li ><a href="https://13.74.156.216/zdjecia">Zdjęcia</a></li>
+	    	    	    	    <li ><a href="https://13.74.156.216/filmy">Filmy</a></li>
+	    	            </ul>
+    </li>
+                <li class="dropdown ">
+        <a href="#" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            O polowaniu            <span class="caret"></span>
+        </a>
+	        <ul class="dropdown-menu">
+            	    	    <li ><a href="https://13.74.156.216/mapa-zagrozenia-pozarowego">Mapa zagrożenia pożarowego</a></li>
+	    	    	    	    <li ><a href="https://13.74.156.216/jak-bezpiecznie-polowac">Jak bezpiecznie polować</a></li>
+	    	    	    	    <li ><a href="https://13.74.156.216/metody-polowan">Metody polowań</a></li>
+	    	    	    	    <li ><a href="https://13.74.156.216/reakcja-zwierzyny-na-strzal">Reakcja zwierzyny</a></li>
+	    	    	    	    <li ><a href="https://13.74.156.216/urzadzenia-lowieckie">Urządzenia łowieckie</a></li>
+	    	    	    	    <li ><a href="https://13.74.156.216/literatura">Literatura</a></li>
+	    	            </ul>
+    </li>
+                   <li class="">
+        <a href="https://13.74.156.216/kalendarz" >Kalendarz</a>
+    </li>
+         
+                  <li class="">
+        <a href="https://13.74.156.216/kontakt" >Kontakt</a>
+    </li>
+         
+         </ul>
+    </nav>
+ 
+</header>
+
+</header>
+
+  </header>
+</div>
+        
+<div class="wrapper bgded overlay" style="background-image:url('https://13.74.156.216/themes/wt/img/01.png');">
+  <div id="pageintro" class="hoc clear">
+    <article>
+      <h2 class="heading" >Koło Łowieckie "Wieniec" w Toruniu</h2>
+      <p>‘[…] A w dniu 23 stycznia 1960 roku odbyło się pierwsze zebranie założycielskie Koła Łowieckiego "WIENIEC" w obecności 12 osób…’<br></p>
+      <footer><a class="btn" href="./historia">Historia</a></footer>
+    </article>
+  </div>
+</div>
+
+<div class="wrapper row3">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+
+    <div class="center btmspace-50">
+      <h2 class="heading">Co się dzieje w kole</h2>
+    </div>
+	<ul class="nospace group btmspace-50">
+	
+<li class="one_third  first  ">
+        <article class="element">
+                <figure><center><img src="https://13.74.156.216/uploads/blog/falszywy-alert-rcb.jpg"  style="height: 210px;"  alt=""></center>
+		                        <figcaption><a class="btn small" href="https://13.74.156.216/blog/post/falszywy-alert-rcb">Więcej</a></figcaption>
+                </figure>
+                <div class="excerpt">
+                        <time datetime="2045-06-06T08:15+00:00" data-title="Nov"><strong>Lis</strong><em>27</em></time>
+                        <h6 class="heading"><a href="https://13.74.156.216/blog/post/falszywy-alert-rcb">Fałszywy alert RCB</a></h6>
+                        <p>SMS z alertem RCB o zakazie wejścia do lasu w wyznaczonych strefach dostali mieszkańcy woj. kuj&hellip;</b></i></u></p>
+                </div>
+        </article>
+</li>
+
+<li class="one_third ">
+        <article class="element">
+                <figure><center><img src="https://13.74.156.216/uploads/blog/rusza-akcja-mysliwska-paczka.jpg"  style="height: 210px;"  alt=""></center>
+		                        <figcaption><a class="btn small" href="https://13.74.156.216/blog/post/rusza-akcja-mysliwska-paczka">Więcej</a></figcaption>
+                </figure>
+                <div class="excerpt">
+                        <time datetime="2045-06-06T08:15+00:00" data-title="Nov"><strong>Lis</strong><em>27</em></time>
+                        <h6 class="heading"><a href="https://13.74.156.216/blog/post/rusza-akcja-mysliwska-paczka">Rusza akcja „Myśliwska paczka”</a></h6>
+                        <p>Szanowne Koleżanki, Szanowni Koledzy!Zachęcamy Was do wzięcia udziału w kolejnej edycj&hellip;</b></i></u></p>
+                </div>
+        </article>
+</li>
+
+<li class="one_third ">
+        <article class="element">
+                <figure><center><img src="https://13.74.156.216/uploads/blog/lowiecki-stroj-organizacyjny-2.jpg"  style="height: 210px;"  alt=""></center>
+		                        <figcaption><a class="btn small" href="https://13.74.156.216/blog/post/lowiecki-stroj-organizacyjny-2">Więcej</a></figcaption>
+                </figure>
+                <div class="excerpt">
+                        <time datetime="2045-06-06T08:15+00:00" data-title="Nov"><strong>Lis</strong><em>27</em></time>
+                        <h6 class="heading"><a href="https://13.74.156.216/blog/post/lowiecki-stroj-organizacyjny-2">Łowiecki strój organizacyjny</a></h6>
+                        <p>Koleżanki, Koledzy!Chciałbym przypomnieć o mundurach i zachęcić Was, abyście poświe&hellip;</b></i></u></p>
+                </div>
+        </article>
+</li>
+
+  </ul>
+    <p class="center nospace"><a class="btn" href="./blog">Aktualności</a></p>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay " style="background-image:url('https://13.74.156.216/themes/wt/img/02.png');">
+  <div class="hoc container clear">
+    <!-- ################################################################################################ -->
+    <article class="center">
+      <h2 class="font-x3 uppercase">Wybierasz się na polowanie?</h2>
+      <p class="btmspace-50 font-x2 ">Sprawdź aktualne warunki meteo oraz kalendarz polowań!</p>
+      <footer>
+        <ul class="nospace inline pushright">
+          <li><a class="btn " href="http://www.pogodawtoruniu.pl" target="_blank">Pogoda</a></li>
+          <li><a class="btn " href="./kalendarz">Kalendarz</a></li>
+          <li><a class="btn " href="./mapa-zagrozenia-pozarowego">Zagrożenie pożarowe</a></li>
+        </ul>
+      </footer>
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <section class="hoc container clear">
+    <!-- ################################################################################################ -->
+    <div class="group">
+      <div class="one_third first btmspace-30">
+        <h6 class="font-x3 uppercase">O polowaniu słów kilka </h6>
+      </div>
+      <article class="one_third btmspace-30">
+        <h6 class="uppercase font-x1"><a href="./metody-polowan">Metody polowań</a></h6>
+        <p class="nospace">Obowiązujący w Polsce "Regulamin polowań" dopuszcza następujące sposoby polowania&hellip;</p>
+      </article>
+      <article class="one_third btmspace-30">
+        <h6 class="uppercase font-x1"><a href="./reakcja-zwierzyny-na-strzal">Reakcja zwierzyny na strzał</a></h6>
+        <p class="nospace">Celny strzał do zwierzyny płowej jest przez nią zaznaczany specyficznym odruchem, który może wskazać przybliżone miejsce trafienia pocisku&hellip;</p>
+      </article>
+      <article class="one_third first">
+        <h6 class="uppercase font-x1"><a href="./jak-bezpiecznie-polowac">Jak bezpiecznie polować</a></h6>
+        <p class="nospace">Myśliwy jest odpowiedzialny za bezpieczne używanie broni i amunicji oraz zobowiązany jest do przestrzegania zasad&hellip;</p>
+      </article>
+      <article class="one_third">
+        <h6 class="uppercase font-x1"><a href="./literatura">Literatura łowiecka</a></h6>
+        <p class="nospace">Łowiectwo już u zarania państwowości polskiej było ważnym elementem naszej kultury, określając jej charakter i tożsamość&hellip;</p>
+      </article>
+	  <article class="one_third">
+        <h6 class="uppercase font-x1"><a href="./urzadzenia-lowieckie">Urządzenia łowieckie</a></h6>
+        <p class="nospace">Ambony, zwyżki, paśniki, lizawki&hellip;</p>
+      </article>
+    </div>
+    <!-- ################################################################################################ -->
+  </section>
+</div>
+
+<div class="wrapper row4 bgded overlay" style="background-image:url('https://13.74.156.216/themes/wt/img/03.png');">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<footer id="footer" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <div class="one_quarter first">
+      <h6 class="title">Działalność</h6>
+   <p>Uczestnictwo w okręgowych zawodach strzeleckich to stały element aktywności naszych członków. Sekcja strzelecka KŁ "Wieniec" to stali uczestnicy corocznych zawodów strzelectwa myśliwskiego.</p><p>Koło chętnie nawiązuje współpracę z organizacjami proekologicznymi a szczególnie z młodzieżą</p> </div>
+    <div class="one_quarter">
+      <h6 class="title">Kontakt</h6>
+   <div><i class="fa fa-map-marker"></i> Barbarka 1, 87-100 Toruń</div><div><br></div><div><i class="fa fa-phone"></i> Prezes: 506-812-557</div><div>&nbsp; &nbsp; Łowczy: 608-243-998</div><div>&nbsp; &nbsp; Skarbnik:&nbsp;600-177-090</div><div>&nbsp; &nbsp; Sekretarz: 606-932-290</div><div><br></div><div></div><div><i class="fa fa-at"></i> kontakt@wieniectorun.pl</div><div><br></div><div><i class="fab fa-facebook-square"></i>&nbsp;facebook.pl/wieniectorun</div>    <br></div>
+    <div class="one_quarter">
+      <h6 class="title">Linki</h6>
+   <p><a href="http://www.pzlow.pl" target="_blank">Polski Związek Łowiecki</a></p><p><a href="http://www.pzltorun.pl" target="_blank">Zarząd Okręgowy w Toruniu</a></p><p><a href="http://bip.bydgoszcz.kwp.policja.gov.pl/" target="_blank">KWP w Bydgoszczy</a></p>    </div>
+	<div class="one_quarter">
+      <h6 class="title">Nadchodzące wydarzenia</h6>
+   <p><li>
+	<article>
+		<h2 class="nospace font-x1"><a href="https://wieniectorun.pl/kalendarz">Polowanie wigilijne</a></h2>
+		<time class="font-xs block btmspace-10" >2019-12-21</time>
+	</article>
+</li>
+<li>
+	<article>
+		<h2 class="nospace font-x1"><a href="https://wieniectorun.pl/kalendarz">Polowanie zbiorowe</a></h2>
+		<time class="font-xs block btmspace-10" >2020-01-11</time>
+	</article>
+</li>
+<li>
+	<article>
+		<h2 class="nospace font-x1"><a href="https://wieniectorun.pl/kalendarz">Obchody 60-cio lecia Koła Łowieckiego "Wieniec" w Toruniu</a></h2>
+		<time class="font-xs block btmspace-10" >2020-01-25</time>
+	</article>
+</li>
+<br></p>    </div>
+</footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2019 - Wszelkie prawa zastrzeżone - <a href="#">wieniectorun.pl</a></p>
+    <p class="fl_right"><small>Powered by <a href="https://batflat.org/">Batflat</a>.</small></a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<script src="https://13.74.156.216/themes/wt/js/jquery.backtotop.js"></script>
+</body>
+</html>

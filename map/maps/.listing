@@ -1,0 +1,14 @@
+drwxr-xr-x    2 r04118rh   r04118rh         4096 Feb 10  2015 .
+drwxr-xr-x    6 r04118rh   r04118rh         4096 Sep 13  2018 ..
+-rw-r--r--    1 r04118rh   r04118rh         9497 Feb 10  2015 141.json
+-rw-r--r--    1 r04118rh   r04118rh         8855 Feb 10  2015 141.osm
+-rw-r--r--    1 r04118rh   r04118rh        25468 Feb 10  2015 141_sektory.json
+-rw-r--r--    1 r04118rh   r04118rh        16157 Feb 10  2015 141_sektory.osm
+-rw-r--r--    1 r04118rh   r04118rh         4802 Feb 10  2015 143.json
+-rw-r--r--    1 r04118rh   r04118rh         4642 Feb 10  2015 143.osm
+-rw-r--r--    1 r04118rh   r04118rh        14490 Feb 10  2015 143_sektory.json
+-rw-r--r--    1 r04118rh   r04118rh        12268 Feb 10  2015 143_sektory.osm
+-rw-r--r--    1 r04118rh   r04118rh      1473075 Feb 10  2015 forest.json
+-rw-r--r--    1 r04118rh   r04118rh     13943920 Feb 10  2015 forest.osm
+-rw-r--r--    1 r04118rh   r04118rh     13448202 Feb 10  2015 map.json
+-rw-r--r--    1 r04118rh   r04118rh      1017378 Feb 10  2015 only_forest.osm

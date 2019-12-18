@@ -1,0 +1,17 @@
+drwxr-xr-x    6 r04118rh   r04118rh         4096 Aug 24  2018 .
+drwxr-xr-x   15 r04118rh   r04118rh         4096 Sep 14  2018 ..
+-rw-r--r--    1 r04118rh   r04118rh          415 Aug 24  2018 .editorconfig
+drwxr-xr-x    2 r04118rh   r04118rh         4096 Aug 24  2018 .github
+-rw-r--r--    1 r04118rh   r04118rh           30 Aug 24  2018 .gitignore
+-rw-r--r--    1 r04118rh   r04118rh         1410 Aug 24  2018 .jscsrc
+-rw-r--r--    1 r04118rh   r04118rh          547 Aug 24  2018 .jshintrc
+-rw-r--r--    1 r04118rh   r04118rh         1124 Aug 24  2018 DEPLOY.md
+-rw-r--r--    1 r04118rh   r04118rh         1880 Aug 24  2018 Gruntfile.js
+-rw-r--r--    1 r04118rh   r04118rh         1080 Aug 24  2018 LICENSE
+-rw-r--r--    1 r04118rh   r04118rh         1182 Aug 24  2018 README.md
+-rw-r--r--    1 r04118rh   r04118rh         2137 Aug 24  2018 ROADMAP.md
+-rw-r--r--    1 r04118rh   r04118rh          545 Aug 24  2018 bower.json
+drwxr-xr-x    5 r04118rh   r04118rh         4096 Aug 24  2018 dist
+drwxr-xr-x    2 r04118rh   r04118rh         4096 Aug 24  2018 examples
+-rw-r--r--    1 r04118rh   r04118rh         1024 Aug 24  2018 package.json
+drwxr-xr-x    5 r04118rh   r04118rh         4096 Aug 24  2018 src

@@ -1,0 +1,24 @@
+[23-Aug-2018 15:47:45 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /public_html/inc/modules/galleries/Site.php on line 53
+[23-Aug-2018 15:48:39 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /public_html/inc/modules/galleries/Site.php on line 53
+[13-Sep-2018 13:45:47 Europe/Berlin] PHP Parse error:  syntax error, unexpected '[', expecting ')' in /public_html/inc/core/defines.php on line 32
+[13-Sep-2018 13:45:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected '[', expecting ')' in /public_html/inc/core/defines.php on line 32
+[13-Sep-2018 13:53:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected '[', expecting ')' in /public_html/inc/core/defines.php on line 32
+[13-Sep-2018 13:53:12 Europe/Berlin] PHP Parse error:  syntax error, unexpected '[', expecting ')' in /public_html/inc/core/defines.php on line 32
+[13-Sep-2018 13:53:56 Europe/Berlin] PHP Parse error:  syntax error, unexpected '[', expecting ')' in /public_html/inc/core/defines.php on line 32
+[13-Sep-2018 13:54:00 Europe/Berlin] PHP Parse error:  syntax error, unexpected '[', expecting ')' in /public_html/inc/core/deqM on line 32
+[20-May-2019 15:40:46 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 1
+[20-May-2019 15:40:46 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 2
+[20-May-2019 15:40:46 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 3
+[20-May-2019 15:40:46 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 4
+[20-May-2019 15:42:26 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 1
+[20-May-2019 15:42:26 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 2
+[20-May-2019 15:42:26 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 3
+[20-May-2019 15:42:26 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 4
+[20-May-2019 15:42:30 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 1
+[20-May-2019 15:42:30 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 2
+[20-May-2019 15:42:30 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 3
+[20-May-2019 15:42:30 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 4
+[20-May-2019 15:42:33 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 1
+[20-May-2019 15:42:33 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 2
+[20-May-2019 15:42:33 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 3
+[20-May-2019 15:42:33 Europe/Berlin] PHP Notice:  Undefined variable: bat in /public_html/tmp/map.html on line 4

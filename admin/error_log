@@ -1,0 +1,28 @@
+[20-May-2019 15:40:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 19 documents.uid may not be NULL in /public_html/inc/core/lib/QueryBuilder.php:882
+Stack trace:
+#0 /public_html/inc/core/lib/QueryBuilder.php(882): PDOStatement->execute()
+#1 /public_html/inc/core/lib/QueryBuilder.php(861): Inc\Core\Lib\QueryBuilder->_query('INSERT INTO doc...')
+#2 /public_html/inc/core/lib/QueryBuilder.php(537): Inc\Core\Lib\QueryBuilder->_build()
+#3 /public_html/inc/modules/documents/Admin.php(69): Inc\Core\Lib\QueryBuilder->save(Array)
+#4 [internal function]: Inc\Modules\Documents\Admin->PostSaveDoc()
+#5 /public_html/inc/core/Admin.php(117): call_user_func_array(Array, Array)
+#6 /public_html/admin/index.php(38): Inc\Core\Admin->loadModule('documents', 'postSaveDoc')
+#7 [internal function]: {closure}('documents', 'saveDoc', NULL)
+#8 /public_html/inc/core/lib/Router.php(93): call_user_func_array(Object(Closure), Array)
+#9 /public_html/admin/index.php(42): Inc\Core\Lib\Router->execute()
+#10 {main}
+  thrown in /public_html/inc/core/lib/QueryBuilder.php on line 882
+[20-May-2019 15:41:56 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 19 documents.rel may not be NULL in /public_html/inc/core/lib/QueryBuilder.php:882
+Stack trace:
+#0 /public_html/inc/core/lib/QueryBuilder.php(882): PDOStatement->execute()
+#1 /public_html/inc/core/lib/QueryBuilder.php(861): Inc\Core\Lib\QueryBuilder->_query('INSERT INTO doc...')
+#2 /public_html/inc/core/lib/QueryBuilder.php(537): Inc\Core\Lib\QueryBuilder->_build()
+#3 /public_html/inc/modules/documents/Admin.php(69): Inc\Core\Lib\QueryBuilder->save(Array)
+#4 [internal function]: Inc\Modules\Documents\Admin->PostSaveDoc()
+#5 /public_html/inc/core/Admin.php(117): call_user_func_array(Array, Array)
+#6 /public_html/admin/index.php(38): Inc\Core\Admin->loadModule('documents', 'postSaveDoc')
+#7 [internal function]: {closure}('documents', 'saveDoc', NULL)
+#8 /public_html/inc/core/lib/Router.php(93): call_user_func_array(Object(Closure), Array)
+#9 /public_html/admin/index.php(42): Inc\Core\Lib\Router->execute()
+#10 {main}
+  thrown in /public_html/inc/core/lib/QueryBuilder.php on line 882

@@ -1,0 +1,13 @@
+drwxr-xr-x    5 r04118rh   r04118rh         4096 Aug 22  2018 .
+drwxr-xr-x   15 r04118rh   r04118rh         4096 Sep 14  2018 ..
+drwxr-xr-x    2 r04118rh   r04118rh         4096 Aug 22  2018 font
+drwxr-xr-x    2 r04118rh   r04118rh         4096 Aug 22  2018 lang
+drwxr-xr-x    5 r04118rh   r04118rh         4096 Aug 22  2018 plugin
+-rw-r--r--    1 r04118rh   r04118rh        16018 Aug 22  2018 summernote-bs4.css
+-rw-r--r--    1 r04118rh   r04118rh       262335 Aug 22  2018 summernote-bs4.js
+-rw-r--r--    1 r04118rh   r04118rh       116839 Aug 22  2018 summernote-bs4.min.js
+-rw-r--r--    1 r04118rh   r04118rh        25208 Aug 22  2018 summernote-lite.css
+-rw-r--r--    1 r04118rh   r04118rh       281176 Aug 22  2018 summernote-lite.js
+-rw-r--r--    1 r04118rh   r04118rh        16089 Aug 22  2018 summernote.css
+-rw-r--r--    1 r04118rh   r04118rh       262077 Aug 22  2018 summernote.js
+-rw-r--r--    1 r04118rh   r04118rh       116609 Aug 22  2018 summernote.min.js

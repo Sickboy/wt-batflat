@@ -1,0 +1,14 @@
+drwxr-xr-x    2 r04118rh   r04118rh         4096 Aug 22  2018 .
+drwxr-xr-x    7 r04118rh   r04118rh         4096 Aug 22  2018 ..
+-rw-r--r--    1 r04118rh   r04118rh         1234 Aug 22  2018 AcceptLanguage.php
+-rw-r--r--    1 r04118rh   r04118rh         6580 Aug 22  2018 Browser.php
+-rw-r--r--    1 r04118rh   r04118rh        31919 Aug 22  2018 BrowserDetector.php
+-rw-r--r--    1 r04118rh   r04118rh           93 Aug 22  2018 DetectorInterface.php
+-rw-r--r--    1 r04118rh   r04118rh         1568 Aug 22  2018 Device.php
+-rw-r--r--    1 r04118rh   r04118rh         2602 Aug 22  2018 DeviceDetector.php
+-rw-r--r--    1 r04118rh   r04118rh          130 Aug 22  2018 InvalidArgumentException.php
+-rw-r--r--    1 r04118rh   r04118rh         2779 Aug 22  2018 Language.php
+-rw-r--r--    1 r04118rh   r04118rh         1332 Aug 22  2018 LanguageDetector.php
+-rw-r--r--    1 r04118rh   r04118rh         3403 Aug 22  2018 Os.php
+-rw-r--r--    1 r04118rh   r04118rh        14577 Aug 22  2018 OsDetector.php
+-rw-r--r--    1 r04118rh   r04118rh         1127 Aug 22  2018 UserAgent.php

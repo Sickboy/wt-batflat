@@ -1,0 +1,6 @@
+drwxr-xr-x    2 r04118rh   r04118rh         4096 Aug 23  2018 .
+drwxr-xr-x   14 r04118rh   99               4096 Mar 21  2019 ..
+-rwxr-xr-x    1 r04118rh   r04118rh        23384 Aug 23  2018 cgiecho
+-rwxr-xr-x    1 r04118rh   r04118rh        23384 Aug 23  2018 cgiemail
+-rwxr-xr-x    1 r04118rh   r04118rh         4344 Aug 23  2018 entropybanner.cgi
+-rwxr-xr-x    1 r04118rh   r04118rh         4336 Aug 23  2018 randhtml.cgi

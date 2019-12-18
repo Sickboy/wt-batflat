@@ -1,0 +1,10 @@
+drwxr-xr-x    2 r04118rh   r04118rh         4096 May 20  2019 .
+drwxr-xr-x    3 r04118rh   r04118rh         4096 May 20  2019 ..
+-rw-r--r--    1 r04118rh   r04118rh          230 May 20  2019 en_english.ini
+-rw-r--r--    1 r04118rh   r04118rh          247 May 20  2019 es_spanish.ini
+-rw-r--r--    1 r04118rh   r04118rh          242 May 20  2019 it_italian.ini
+-rw-r--r--    1 r04118rh   r04118rh          255 May 20  2019 nl_dutch.ini
+-rw-r--r--    1 r04118rh   r04118rh          292 May 20  2019 pl_polski.ini
+-rw-r--r--    1 r04118rh   r04118rh          299 May 20  2019 ru_russian.ini
+-rw-r--r--    1 r04118rh   r04118rh          242 May 20  2019 se_swedish.ini
+-rw-r--r--    1 r04118rh   r04118rh          200 May 20  2019 tr_turkish.ini
